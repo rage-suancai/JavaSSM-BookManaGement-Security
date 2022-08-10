@@ -25,10 +25,10 @@ public class RootConfiguration {
     @Bean
     public DataSource dataSource(){
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/book_manage2");
+        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setUsername("");
+        dataSource.setPassword("");
         return dataSource;
     }
     @Bean
